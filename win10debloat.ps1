@@ -69,7 +69,7 @@ $7zip                            = New-Object system.Windows.Forms.Button
 $7zip.text                       = "7-Zip"
 $7zip.width                      = 150
 $7zip.height                     = 30
-$7zip.location                   = New-Object System.Drawing.Point(870,104)
+$7zip.location                   = New-Object System.Drawing.Point(870,61)
 $7zip.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $irfanview                       = New-Object system.Windows.Forms.Button
@@ -132,7 +132,7 @@ $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
 $winterminal.width               = 150
 $winterminal.height              = 30
-$winterminal.location            = New-Object System.Drawing.Point(715,61)
+$winterminal.location            = New-Object System.Drawing.Point(870,61)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
