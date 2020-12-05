@@ -55,8 +55,15 @@ $brave                           = New-Object system.Windows.Forms.Button
 $brave.text                      = "Brave Browser"
 $brave.width                     = 150
 $brave.height                    = 30
-$brave.location                  = New-Object System.Drawing.Point(251,105)
+$brave.location                  = New-Object System.Drawing.Point(251,140)
 $brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$opera                           = New-Object system.Windows.Forms.Button
+$opera.text                      = "Opera Browser"
+$opera.width                     = 150
+$opera.height                    = 30
+$opera.location                  = New-Object System.Drawing.Point(251,105)
+$opera.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $msedge                           = New-Object system.Windows.Forms.Button
 $msedge.text                      = "Microsoft Edge"
@@ -76,7 +83,7 @@ $githubdestkop                   = New-Object system.Windows.Forms.Button
 $githubdestkop.text              = "Git-Hub Desktop"
 $githubdestkop.width             = 150
 $githubdestkop.height            = 30
-$githubdestkop.location          = New-Object System.Drawing.Point(713,19)
+$githubdestkop.location          = New-Object System.Drawing.Point(713,0)
 $githubdestkop.Font              = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $7zip                            = New-Object system.Windows.Forms.Button
@@ -97,14 +104,14 @@ $adobereader                     = New-Object system.Windows.Forms.Button
 $adobereader.text                = "Adobe Reader DC"
 $adobereader.width               = 150
 $adobereader.height              = 30
-$adobereader.location            = New-Object System.Drawing.Point(405,89)
+$adobereader.location            = New-Object System.Drawing.Point(405,0)
 $adobereader.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $sumatrapdf                      = New-Object system.Windows.Forms.Button
 $sumatrapdf.text                 = "SumatraPDF"
 $sumatrapdf.width                = 150
 $sumatrapdf.height               = 30
-$sumatrapdf.location             = New-Object System.Drawing.Point(405,124)
+$sumatrapdf.location             = New-Object System.Drawing.Point(405,35)
 $sumatrapdf.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $imageconverter                  = New-Object system.Windows.Forms.Button
@@ -118,14 +125,14 @@ $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
 $notepad.width                   = 150
 $notepad.height                  = 30
-$notepad.location                = New-Object System.Drawing.Point(713,54)
+$notepad.location                = New-Object System.Drawing.Point(713,35)
 $notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $sublimetext                     = New-Object system.Windows.Forms.Button
 $sublimetext.text                = "Sublime Text"
 $sublimetext.width               = 150
 $sublimetext.height              = 30
-$sublimetext.location            = New-Object System.Drawing.Point(713,89)
+$sublimetext.location            = New-Object System.Drawing.Point(713,70)
 $sublimetext.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
@@ -139,28 +146,35 @@ $mpc                             = New-Object system.Windows.Forms.Button
 $mpc.text                        = "Media Player Classic"
 $mpc.width                       = 150
 $mpc.height                      = 30
-$mpc.location                    = New-Object System.Drawing.Point(559,124)
+$mpc.location                    = New-Object System.Drawing.Point(559,140)
 $mpc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $popcorntime                     = New-Object system.Windows.Forms.Button
 $popcorntime.text                = "Popcorn-Time"
 $popcorntime.width               = 150
 $popcorntime.height              = 30
-$popcorntime.location            = New-Object System.Drawing.Point(559,19)
+$popcorntime.location            = New-Object System.Drawing.Point(559,0)
 $popcorntime.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$subtitulos1                     = New-Object system.Windows.Forms.Button
+$subtitulos1.text                = "Subtitulos 1.0"
+$subtitulos1.width               = 150
+$subtitulos1.height              = 30
+$subtitulos1.location            = New-Object System.Drawing.Point(559,35)
+$subtitulos1.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vlc                             = New-Object system.Windows.Forms.Button
 $vlc.text                        = "VLC"
 $vlc.width                       = 150
 $vlc.height                      = 30
-$vlc.location                    = New-Object System.Drawing.Point(559,54)
+$vlc.location                    = New-Object System.Drawing.Point(559,70)
 $vlc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $smplayer                        = New-Object system.Windows.Forms.Button
 $smplayer.text                   = "SMPlayer"
 $smplayer.width                  = 150
 $smplayer.height                 = 30
-$smplayer.location               = New-Object System.Drawing.Point(559,89)
+$smplayer.location               = New-Object System.Drawing.Point(559,105)
 $smplayer.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $powertoys                       = New-Object system.Windows.Forms.Button
@@ -198,11 +212,18 @@ $inkscape.height              	 = 30
 $inkscape.location           	 = New-Object System.Drawing.Point(1175,140)
 $inkscape.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$blender                         = New-Object system.Windows.Forms.Button
+$blender.text                    = "Blender"
+$blender.width                   = 150
+$blender.height              	 = 30
+$blender.location           	 = New-Object System.Drawing.Point(1175,175)
+$blender.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $kdenlive                        = New-Object system.Windows.Forms.Button
 $kdenlive.text                   = "Kdenlive"
 $kdenlive.width                  = 150
 $kdenlive.height              	 = 30
-$kdenlive.location           	 = New-Object System.Drawing.Point(1175,175)
+$kdenlive.location           	 = New-Object System.Drawing.Point(559,175)
 $kdenlive.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $ccleaner                        = New-Object system.Windows.Forms.Button
@@ -237,7 +258,7 @@ $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "Visual Studio Code"
 $vscode.width                    = 150
 $vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(713,140)
+$vscode.location                 = New-Object System.Drawing.Point(713,105)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -511,7 +532,7 @@ $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 412
 $PictureBox1.height              = 125
 $PictureBox1.location            = New-Object System.Drawing.Point(449,541)
-$PictureBox1.imageLocation       = "https://github.com/ChrisTitusTech/win10script/blob/master/titus-toolbox.png?raw=true"
+$PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blob/master/images/fnx-toolbox.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode (E)"
@@ -521,7 +542,7 @@ $lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$msedge,$firefox,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$kdenlive,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -544,9 +565,20 @@ $imageconverter.Add_Click({
 	~/Downloads/Image_Converter.exe
 })
 
+$subtitulos1.Add_Click({ 
+    Invoke-WebRequest -Uri "https://fnxlabs.net.ar/files/tools/github/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
+	~/Downloads/Subtitulos_1.0.exe
+})
+
 $firefox.Add_Click({ 
-    Write-Host "Installing Firefox"
+    Write-Host "Installing Mozilla Firefox"
     choco install firefox -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$opera.Add_Click({ 
+    Write-Host "Installing Opera Browser"
+    choco install opera -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
@@ -655,6 +687,12 @@ $gimp.Add_Click({
 $inkscape.Add_Click({ 
     Write-Host "Installing Inkscape"
     choco install inkscape -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$blender.Add_Click({ 
+    Write-Host "Installing Blender"
+    choco install blender -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
