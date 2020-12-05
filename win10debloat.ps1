@@ -27,13 +27,13 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 $Form                            = New-Object system.Windows.Forms.Form
-$Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
-$Form.text                       = "Form"
+$Form.ClientSize                 = New-Object System.Drawing.Point(1350,700)
+$Form.text                       = "FNX Labs Windows Toolbox"
 $Form.TopMost                    = $false
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
 $Panel1.height                   = 156
-$Panel1.width                    = 1032
+$Panel1.width                    = 1194
 $Panel1.location                 = New-Object System.Drawing.Point(9,90)
 
 $Label1                          = New-Object system.Windows.Forms.Label
@@ -41,8 +41,8 @@ $Label1.text                     = "Software Installation"
 $Label1.AutoSize                 = $true
 $Label1.width                    = 25
 $Label1.height                   = 10
-$Label1.location                 = New-Object System.Drawing.Point(450,35)
-$Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+$Label1.location                 = New-Object System.Drawing.Point(25,15)
+$Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',28)
 
 $installchoco                    = New-Object system.Windows.Forms.Button
 $installchoco.text               = "Install Chocolatey"
@@ -177,6 +177,34 @@ $winterminal.height              = 30
 $winterminal.location            = New-Object System.Drawing.Point(867,124)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$ccleaner                        = New-Object system.Windows.Forms.Button
+$ccleaner.text                   = "CCleaner"
+$ccleaner.width                  = 150
+$ccleaner.height                 = 30
+$ccleaner.location               = New-Object System.Drawing.Point(1021,19)
+$ccleaner.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$Speccy                          = New-Object system.Windows.Forms.Button
+$Speccy.text                     = "Speccy"
+$Speccy.width                    = 150
+$Speccy.height                   = 30
+$Speccy.location                 = New-Object System.Drawing.Point(1021,54)
+$Speccy.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$recuva                          = New-Object system.Windows.Forms.Button
+$recuva.text                     = "Recuva"
+$recuva.width                    = 150
+$recuva.height                   = 30
+$recuva.location                 = New-Object System.Drawing.Point(1021,89)
+$recuva.Font           = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$defraggler                      = New-Object system.Windows.Forms.Button
+$defraggler.text                 = "Defraggler"
+$defraggler.width                = 150
+$defraggler.height               = 30
+$defraggler.location             = New-Object System.Drawing.Point(1021,124)
+$defraggler.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "Visual Studio Code"
 $vscode.width                    = 150
@@ -189,7 +217,7 @@ $Label2.text                     = "(Chocolatey Required for installs)"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(478,0)
+$Label2.location                 = New-Object System.Drawing.Point(25,0)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Panel2                          = New-Object system.Windows.Forms.Panel
@@ -208,54 +236,54 @@ $Label3.Font                     = New-Object System.Drawing.Font('Microsoft San
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
 $essentialtweaks.text            = "Essential Tweaks"
 $essentialtweaks.width           = 200
-$essentialtweaks.height          = 115
-$essentialtweaks.location        = New-Object System.Drawing.Point(24,35)
+$essentialtweaks.height          = 135
+$essentialtweaks.location        = New-Object System.Drawing.Point(24,15)
 $essentialtweaks.Font            = New-Object System.Drawing.Font('Microsoft Sans Serif',12,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $backgroundapps                  = New-Object system.Windows.Forms.Button
-$backgroundapps.text             = "Background Apps"
+$backgroundapps.text             = "Background Apps (D)"
 $backgroundapps.width            = 150
 $backgroundapps.height           = 30
 $backgroundapps.location         = New-Object System.Drawing.Point(251,50)
 $backgroundapps.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $cortana                         = New-Object system.Windows.Forms.Button
-$cortana.text                    = "Cortana"
+$cortana.text                    = "Cortana (D)"
 $cortana.width                   = 150
 $cortana.height                  = 30
 $cortana.location                = New-Object System.Drawing.Point(251,85)
 $cortana.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $windowssearch                   = New-Object system.Windows.Forms.Button
-$windowssearch.text              = "Windows Search"
+$windowssearch.text              = "Windows Search (D)"
 $windowssearch.width             = 150
 $windowssearch.height            = 30
 $windowssearch.location          = New-Object System.Drawing.Point(405,120)
 $windowssearch.Font              = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $actioncenter                    = New-Object system.Windows.Forms.Button
-$actioncenter.text               = "Action Center"
+$actioncenter.text               = "Action Center (D)"
 $actioncenter.width              = 150
 $actioncenter.height             = 30
 $actioncenter.location           = New-Object System.Drawing.Point(251,15)
 $actioncenter.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $darkmode                        = New-Object system.Windows.Forms.Button
-$darkmode.text                   = "Dark Mode"
+$darkmode.text                   = "Dark Mode (E)"
 $darkmode.width                  = 150
 $darkmode.height                 = 30
 $darkmode.location               = New-Object System.Drawing.Point(405,15)
 $darkmode.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $visualfx                        = New-Object system.Windows.Forms.Button
-$visualfx.text                   = "Visual FX"
+$visualfx.text                   = "Visual FX (D)"
 $visualfx.width                  = 150
 $visualfx.height                 = 30
 $visualfx.location               = New-Object System.Drawing.Point(405,85)
 $visualfx.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $onedrive                        = New-Object system.Windows.Forms.Button
-$onedrive.text                   = "OneDrive"
+$onedrive.text                   = "OneDrive (D)"
 $onedrive.width                  = 150
 $onedrive.height                 = 30
 $onedrive.location               = New-Object System.Drawing.Point(251,120)
@@ -276,16 +304,16 @@ $Label4.Font                     = New-Object System.Drawing.Font('Microsoft San
 
 $securitylow                     = New-Object system.Windows.Forms.Button
 $securitylow.text                = "Low"
-$securitylow.width               = 150
+$securitylow.width               = 195
 $securitylow.height              = 30
-$securitylow.location            = New-Object System.Drawing.Point(36,120)
+$securitylow.location            = New-Object System.Drawing.Point(25,120)
 $securitylow.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $securityhigh                    = New-Object system.Windows.Forms.Button
 $securityhigh.text               = "High"
-$securityhigh.width              = 150
+$securityhigh.width              = 195
 $securityhigh.height             = 30
-$securityhigh.location           = New-Object System.Drawing.Point(244,120)
+$securityhigh.location           = New-Object System.Drawing.Point(233,120)
 $securityhigh.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',12,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label5                          = New-Object system.Windows.Forms.Label
@@ -436,11 +464,11 @@ $Label21.location                = New-Object System.Drawing.Point(390,507)
 $Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label22                         = New-Object system.Windows.Forms.Label
-$Label22.text                    = "(Unsure!?... Just apply Essential Tweaks)"
+$Label22.text                    = "(E = Enable, D = Disable)"
 $Label22.AutoSize                = $true
 $Label22.width                   = 150
 $Label22.height                  = 10
-$Label22.location                = New-Object System.Drawing.Point(4,14)
+$Label22.location                = New-Object System.Drawing.Point(50,-3)
 $Label22.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label23                         = New-Object system.Windows.Forms.Label
@@ -458,14 +486,14 @@ $PictureBox1.location            = New-Object System.Drawing.Point(449,541)
 $PictureBox1.imageLocation       = "https://github.com/ChrisTitusTech/win10script/blob/master/titus-toolbox.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 $lightmode                       = New-Object system.Windows.Forms.Button
-$lightmode.text                  = "Light Mode"
+$lightmode.text                  = "Light Mode (E)"
 $lightmode.width                 = 150
 $lightmode.height                = 30
 $lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$msedge,$firefox,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$msedge,$firefox,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -484,7 +512,7 @@ $brave.Add_Click({
 })
 
 $imageconverter.Add_Click({ 
-    Invoke-WebRequest -Uri "http://rentasoft.net/products/image-converter/download-demo" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
+    Invoke-WebRequest -Uri "https://fnxlabs.net.ar/files/tools/github/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
 	~/Downloads/Image_Converter.exe
 })
 
@@ -575,6 +603,30 @@ $vscode.Add_Click({
 $winterminal.Add_Click({ 
     Write-Host "Installing New Windows Terminal"
     choco install microsoft-windows-terminal -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$ccleaner.Add_Click({ 
+    Write-Host "Installing CCleaner"
+    choco install ccleaner -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$speccy.Add_Click({ 
+    Write-Host "Installing Speccy"
+    choco install speccy -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$recuva.Add_Click({ 
+    Write-Host "Installing Recuva"
+    choco install recuva -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$defraggler.Add_Click({ 
+    Write-Host "Installing Defraggler"
+    choco install defraggler -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
