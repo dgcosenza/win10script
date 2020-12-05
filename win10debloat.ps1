@@ -111,7 +111,7 @@ $mpc                             = New-Object system.Windows.Forms.Button
 $mpc.text                        = "Media Player Classic"
 $mpc.width                       = 150
 $mpc.height                      = 30
-$mpc.location                    = New-Object System.Drawing.Point(560,61)
+$mpc.location                    = New-Object System.Drawing.Point(560,104)
 $mpc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vlc                             = New-Object system.Windows.Forms.Button
@@ -120,6 +120,13 @@ $vlc.width                       = 150
 $vlc.height                      = 30
 $vlc.location                    = New-Object System.Drawing.Point(560,19)
 $vlc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$smplayer                        = New-Object system.Windows.Forms.Button
+$smplayer.text                   = "SMPlayer"
+$smplayer.width                  = 150
+$smplayer.height                 = 30
+$smplayer.location               = New-Object System.Drawing.Point(560,61)
+$smplayer.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $powertoys                       = New-Object system.Windows.Forms.Button
 $powertoys.text                  = "PowerToys"
@@ -132,7 +139,7 @@ $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
 $winterminal.width               = 150
 $winterminal.height              = 30
-$winterminal.location            = New-Object System.Drawing.Point(870,61)
+$winterminal.location            = New-Object System.Drawing.Point(870,104)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
@@ -423,7 +430,7 @@ $lightmode.location              = New-Object System.Drawing.Point(405,45)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$sumatrapdf,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$sumatrapdf,$smplayer,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -474,6 +481,12 @@ $notepad.Add_Click({
 $vlc.Add_Click({ 
     Write-Host "Installing VLC Media Player"
     choco install vlc -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$smplayer.Add_Click({ 
+    Write-Host "Installing SMPlayer"
+    choco install smplayer -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
