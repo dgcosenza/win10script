@@ -55,85 +55,92 @@ $brave                           = New-Object system.Windows.Forms.Button
 $brave.text                      = "Brave Browser"
 $brave.width                     = 150
 $brave.height                    = 30
-$brave.location                  = New-Object System.Drawing.Point(250,19)
-$brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$brave.location                  = New-Object System.Drawing.Point(250,104)
+$brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $firefox                         = New-Object system.Windows.Forms.Button
 $firefox.text                    = "Firefox"
 $firefox.width                   = 150
 $firefox.height                  = 30
 $firefox.location                = New-Object System.Drawing.Point(250,61)
-$firefox.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$firefox.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $7zip                            = New-Object system.Windows.Forms.Button
 $7zip.text                       = "7-Zip"
 $7zip.width                      = 150
 $7zip.height                     = 30
-$7zip.location                   = New-Object System.Drawing.Point(584,104)
-$7zip.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$7zip.location                   = New-Object System.Drawing.Point(560,104)
+$7zip.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $irfanview                       = New-Object system.Windows.Forms.Button
 $irfanview.text                  = "Irfanview"
 $irfanview.width                 = 150
 $irfanview.height                = 30
-$irfanview.location              = New-Object System.Drawing.Point(417,19)
-$irfanview.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$irfanview.location              = New-Object System.Drawing.Point(870,19)
+$irfanview.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $adobereader                     = New-Object system.Windows.Forms.Button
 $adobereader.text                = "Adobe Reader DC"
 $adobereader.width               = 150
 $adobereader.height              = 30
-$adobereader.location            = New-Object System.Drawing.Point(417,61)
-$adobereader.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$adobereader.location            = New-Object System.Drawing.Point(405,19)
+$adobereader.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$sumatrapdf                     = New-Object system.Windows.Forms.Button
+$sumatrapdf.text                = "SumatraPDF"
+$sumatrapdf.width               = 150
+$sumatrapdf.height              = 30
+$sumatrapdf.location            = New-Object System.Drawing.Point(405,61)
+$sumatrapdf.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
 $notepad.width                   = 150
 $notepad.height                  = 30
-$notepad.location                = New-Object System.Drawing.Point(417,104)
-$notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$notepad.location                = New-Object System.Drawing.Point(405,104)
+$notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
 $gchrome.text                    = "Google Chrome"
 $gchrome.width                   = 150
 $gchrome.height                  = 30
-$gchrome.location                = New-Object System.Drawing.Point(250,104)
-$gchrome.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$gchrome.location                = New-Object System.Drawing.Point(250,19)
+$gchrome.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $mpc                             = New-Object system.Windows.Forms.Button
 $mpc.text                        = "Media Player Classic"
 $mpc.width                       = 150
 $mpc.height                      = 30
-$mpc.location                    = New-Object System.Drawing.Point(584,61)
-$mpc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$mpc.location                    = New-Object System.Drawing.Point(560,61)
+$mpc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vlc                             = New-Object system.Windows.Forms.Button
 $vlc.text                        = "VLC"
 $vlc.width                       = 150
 $vlc.height                      = 30
-$vlc.location                    = New-Object System.Drawing.Point(584,19)
-$vlc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$vlc.location                    = New-Object System.Drawing.Point(560,19)
+$vlc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $powertoys                       = New-Object system.Windows.Forms.Button
 $powertoys.text                  = "PowerToys"
 $powertoys.width                 = 150
 $powertoys.height                = 30
-$powertoys.location              = New-Object System.Drawing.Point(751,105)
-$powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$powertoys.location              = New-Object System.Drawing.Point(715,105)
+$powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
 $winterminal.width               = 150
 $winterminal.height              = 30
-$winterminal.location            = New-Object System.Drawing.Point(751,61)
-$winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$winterminal.location            = New-Object System.Drawing.Point(715,61)
+$winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "VS Code"
 $vscode.width                    = 150
 $vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(751,19)
-$vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$vscode.location                 = New-Object System.Drawing.Point(715,19)
+$vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "(Chocolatey Required for installs)"
@@ -168,49 +175,49 @@ $backgroundapps.text             = "Background Apps"
 $backgroundapps.width            = 150
 $backgroundapps.height           = 30
 $backgroundapps.location         = New-Object System.Drawing.Point(251,45)
-$backgroundapps.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$backgroundapps.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $cortana                         = New-Object system.Windows.Forms.Button
 $cortana.text                    = "Cortana"
 $cortana.width                   = 150
 $cortana.height                  = 30
 $cortana.location                = New-Object System.Drawing.Point(251,82)
-$cortana.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$cortana.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $windowssearch                   = New-Object system.Windows.Forms.Button
 $windowssearch.text              = "Windows Search"
 $windowssearch.width             = 150
 $windowssearch.height            = 30
-$windowssearch.location          = New-Object System.Drawing.Point(417,119)
-$windowssearch.Font              = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$windowssearch.location          = New-Object System.Drawing.Point(405,119)
+$windowssearch.Font              = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $actioncenter                    = New-Object system.Windows.Forms.Button
 $actioncenter.text               = "Action Center"
 $actioncenter.width              = 150
 $actioncenter.height             = 30
 $actioncenter.location           = New-Object System.Drawing.Point(251,9)
-$actioncenter.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$actioncenter.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $darkmode                        = New-Object system.Windows.Forms.Button
 $darkmode.text                   = "Dark Mode"
 $darkmode.width                  = 150
 $darkmode.height                 = 30
-$darkmode.location               = New-Object System.Drawing.Point(417,7)
-$darkmode.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$darkmode.location               = New-Object System.Drawing.Point(405,9)
+$darkmode.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $visualfx                        = New-Object system.Windows.Forms.Button
 $visualfx.text                   = "Visual FX"
 $visualfx.width                  = 150
 $visualfx.height                 = 30
-$visualfx.location               = New-Object System.Drawing.Point(417,82)
-$visualfx.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$visualfx.location               = New-Object System.Drawing.Point(405,82)
+$visualfx.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $onedrive                        = New-Object system.Windows.Forms.Button
 $onedrive.text                   = "OneDrive"
 $onedrive.width                  = 150
 $onedrive.height                 = 30
 $onedrive.location               = New-Object System.Drawing.Point(251,119)
-$onedrive.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$onedrive.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
@@ -412,11 +419,11 @@ $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode"
 $lightmode.width                 = 150
 $lightmode.height                = 30
-$lightmode.location              = New-Object System.Drawing.Point(417,45)
-$lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$lightmode.location              = New-Object System.Drawing.Point(405,45)
+$lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$sumatrapdf,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -449,6 +456,12 @@ $irfanview.Add_Click({
 $adobereader.Add_Click({ 
     Write-Host "Installing Adobe Reader DC"
     choco install adobereader -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$sumatrapdf.Add_Click({ 
+    Write-Host "Installing SumatraPDF"
+    choco install sumatrapdf -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
