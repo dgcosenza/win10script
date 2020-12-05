@@ -209,35 +209,35 @@ $ccleaner                        = New-Object system.Windows.Forms.Button
 $ccleaner.text                   = "CCleaner"
 $ccleaner.width                  = 150
 $ccleaner.height                 = 30
-$ccleaner.location               = New-Object System.Drawing.Point(1021,19)
+$ccleaner.location               = New-Object System.Drawing.Point(1021,0)
 $ccleaner.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Speccy                          = New-Object system.Windows.Forms.Button
 $Speccy.text                     = "Speccy"
 $Speccy.width                    = 150
 $Speccy.height                   = 30
-$Speccy.location                 = New-Object System.Drawing.Point(1021,54)
+$Speccy.location                 = New-Object System.Drawing.Point(1021,35)
 $Speccy.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $recuva                          = New-Object system.Windows.Forms.Button
 $recuva.text                     = "Recuva"
 $recuva.width                    = 150
 $recuva.height                   = 30
-$recuva.location                 = New-Object System.Drawing.Point(1021,89)
+$recuva.location                 = New-Object System.Drawing.Point(1021,70)
 $recuva.Font           = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $defraggler                      = New-Object system.Windows.Forms.Button
 $defraggler.text                 = "Defraggler"
 $defraggler.width                = 150
 $defraggler.height               = 30
-$defraggler.location             = New-Object System.Drawing.Point(1021,124)
+$defraggler.location             = New-Object System.Drawing.Point(1021,105)
 $defraggler.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "Visual Studio Code"
 $vscode.width                    = 150
 $vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(713,124)
+$vscode.location                 = New-Object System.Drawing.Point(713,140)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
