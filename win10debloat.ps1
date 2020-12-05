@@ -526,58 +526,58 @@ $Label15.text                    = "Windows Update"
 $Label15.AutoSize                = $true
 $Label15.width                   = 25
 $Label15.height                  = 10
-$Label15.location                = New-Object System.Drawing.Point(58,459)
-$Label15.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+$Label15.location                = New-Object System.Drawing.Point(45,523)
+$Label15.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',16)
 
 $Panel4                          = New-Object system.Windows.Forms.Panel
-$Panel4.height                   = 168
+$Panel4.height                   = 200
 $Panel4.width                    = 340
 $Panel4.location                 = New-Object System.Drawing.Point(9,491)
 
 $defaultwindowsupdate            = New-Object system.Windows.Forms.Button
 $defaultwindowsupdate.text       = "Default Settings"
-$defaultwindowsupdate.width      = 300
+$defaultwindowsupdate.width      = 200
 $defaultwindowsupdate.height     = 30
-$defaultwindowsupdate.location   = New-Object System.Drawing.Point(20,13)
-$defaultwindowsupdate.Font       = New-Object System.Drawing.Font('Microsoft Sans Serif',14)
+$defaultwindowsupdate.location   = New-Object System.Drawing.Point(24,61)
+$defaultwindowsupdate.Font       = New-Object System.Drawing.Font('Microsoft Sans Serif',12,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $securitywindowsupdate           = New-Object system.Windows.Forms.Button
 $securitywindowsupdate.text      = "Security Updates Only"
-$securitywindowsupdate.width     = 300
+$securitywindowsupdate.width     = 200
 $securitywindowsupdate.height    = 30
-$securitywindowsupdate.location  = New-Object System.Drawing.Point(20,119)
-$securitywindowsupdate.Font      = New-Object System.Drawing.Font('Microsoft Sans Serif',14)
+$securitywindowsupdate.location  = New-Object System.Drawing.Point(24,168)
+$securitywindowsupdate.Font      = New-Object System.Drawing.Font('Microsoft Sans Serif',12,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label16                         = New-Object system.Windows.Forms.Label
-$Label16.text                    = "I recommend doing security updates only."
+$Label16.text                    = "I Recommend Doing Security Updates Only."
 $Label16.AutoSize                = $true
 $Label16.width                   = 25
 $Label16.height                  = 10
-$Label16.location                = New-Object System.Drawing.Point(47,49)
+$Label16.location                = New-Object System.Drawing.Point(24,94)
 $Label16.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label17                         = New-Object system.Windows.Forms.Label
-$Label17.text                    = "- Delays Features updates up to 3 years"
+$Label17.text                    = "* Delays Features Updates Up to 3 Years"
 $Label17.AutoSize                = $true
 $Label17.width                   = 25
 $Label17.height                  = 10
-$Label17.location                = New-Object System.Drawing.Point(71,66)
+$Label17.location                = New-Object System.Drawing.Point(23,112)
 $Label17.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label18                         = New-Object system.Windows.Forms.Label
-$Label18.text                    = "- Delays Security updates 4 days"
+$Label18.text                    = "* Delays Security Updates 4 Days"
 $Label18.AutoSize                = $true
 $Label18.width                   = 25
 $Label18.height                  = 10
-$Label18.location                = New-Object System.Drawing.Point(71,84)
+$Label18.location                = New-Object System.Drawing.Point(24,130)
 $Label18.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label19                         = New-Object system.Windows.Forms.Label
-$Label19.text                    = "- Sets Maximum Active Time"
+$Label19.text                    = "* Sets Maximum Active Time"
 $Label19.AutoSize                = $true
 $Label19.width                   = 25
 $Label19.height                  = 10
-$Label19.location                = New-Object System.Drawing.Point(71,103)
+$Label19.location                = New-Object System.Drawing.Point(24,148)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label20                         = New-Object system.Windows.Forms.Label
@@ -660,12 +660,12 @@ $brave.Add_Click({
 })
 
 $imageconverter.Add_Click({ 
-    Invoke-WebRequest -Uri "https://fnxlabs.net.ar/files/tools/github/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
+    Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/blob/master/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
 	~/Downloads/Image_Converter.exe
 })
 
 $subtitulos1.Add_Click({ 
-    Invoke-WebRequest -Uri "https://fnxlabs.net.ar/files/tools/github/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
+    Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/blob/master/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
 	~/Downloads/Subtitulos_1.0.exe
 })
 
