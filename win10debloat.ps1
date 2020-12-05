@@ -48,8 +48,8 @@ $installchoco                    = New-Object system.Windows.Forms.Button
 $installchoco.text               = "Install Chocolatey"
 $installchoco.width              = 200
 $installchoco.height             = 115
-$installchoco.location           = New-Object System.Drawing.Point(16,19)
-$installchoco.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',16)
+$installchoco.location           = New-Object System.Drawing.Point(24,19)
+$installchoco.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $brave                           = New-Object system.Windows.Forms.Button
 $brave.text                      = "Brave Browser"
@@ -69,7 +69,7 @@ $7zip                            = New-Object system.Windows.Forms.Button
 $7zip.text                       = "7-Zip"
 $7zip.width                      = 150
 $7zip.height                     = 30
-$7zip.location                   = New-Object System.Drawing.Point(870,61)
+$7zip.location                   = New-Object System.Drawing.Point(715,19)
 $7zip.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $irfanview                       = New-Object system.Windows.Forms.Button
@@ -97,7 +97,7 @@ $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
 $notepad.width                   = 150
 $notepad.height                  = 30
-$notepad.location                = New-Object System.Drawing.Point(405,104)
+$notepad.location                = New-Object System.Drawing.Point(715,104)
 $notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
@@ -132,7 +132,7 @@ $powertoys                       = New-Object system.Windows.Forms.Button
 $powertoys.text                  = "PowerToys"
 $powertoys.width                 = 150
 $powertoys.height                = 30
-$powertoys.location              = New-Object System.Drawing.Point(715,105)
+$powertoys.location              = New-Object System.Drawing.Point(870,61)
 $powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $winterminal                     = New-Object system.Windows.Forms.Button
@@ -146,7 +146,7 @@ $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "VS Code"
 $vscode.width                    = 150
 $vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(715,19)
+$vscode.location                 = New-Object System.Drawing.Point(715,61)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -154,7 +154,7 @@ $Label2.text                     = "(Chocolatey Required for installs)"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(478,3)
+$Label2.location                 = New-Object System.Drawing.Point(478,0)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Panel2                          = New-Object system.Windows.Forms.Panel
@@ -167,63 +167,63 @@ $Label3.text                     = "System Tweaks"
 $Label3.AutoSize                 = $true
 $Label3.width                    = 230
 $Label3.height                   = 25
-$Label3.location                 = New-Object System.Drawing.Point(195,251)
-$Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
+$Label3.location                 = New-Object System.Drawing.Point(323,264)
+$Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',18)
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
 $essentialtweaks.text            = "Essential Tweaks"
 $essentialtweaks.width           = 200
 $essentialtweaks.height          = 115
-$essentialtweaks.location        = New-Object System.Drawing.Point(24,34)
-$essentialtweaks.Font            = New-Object System.Drawing.Font('Microsoft Sans Serif',14)
+$essentialtweaks.location        = New-Object System.Drawing.Point(24,35)
+$essentialtweaks.Font            = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $backgroundapps                  = New-Object system.Windows.Forms.Button
 $backgroundapps.text             = "Background Apps"
 $backgroundapps.width            = 150
 $backgroundapps.height           = 30
-$backgroundapps.location         = New-Object System.Drawing.Point(251,45)
+$backgroundapps.location         = New-Object System.Drawing.Point(251,50)
 $backgroundapps.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $cortana                         = New-Object system.Windows.Forms.Button
 $cortana.text                    = "Cortana"
 $cortana.width                   = 150
 $cortana.height                  = 30
-$cortana.location                = New-Object System.Drawing.Point(251,82)
+$cortana.location                = New-Object System.Drawing.Point(251,85)
 $cortana.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $windowssearch                   = New-Object system.Windows.Forms.Button
 $windowssearch.text              = "Windows Search"
 $windowssearch.width             = 150
 $windowssearch.height            = 30
-$windowssearch.location          = New-Object System.Drawing.Point(405,119)
+$windowssearch.location          = New-Object System.Drawing.Point(405,120)
 $windowssearch.Font              = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $actioncenter                    = New-Object system.Windows.Forms.Button
 $actioncenter.text               = "Action Center"
 $actioncenter.width              = 150
 $actioncenter.height             = 30
-$actioncenter.location           = New-Object System.Drawing.Point(251,9)
+$actioncenter.location           = New-Object System.Drawing.Point(251,15)
 $actioncenter.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $darkmode                        = New-Object system.Windows.Forms.Button
 $darkmode.text                   = "Dark Mode"
 $darkmode.width                  = 150
 $darkmode.height                 = 30
-$darkmode.location               = New-Object System.Drawing.Point(405,9)
+$darkmode.location               = New-Object System.Drawing.Point(405,15)
 $darkmode.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $visualfx                        = New-Object system.Windows.Forms.Button
 $visualfx.text                   = "Visual FX"
 $visualfx.width                  = 150
 $visualfx.height                 = 30
-$visualfx.location               = New-Object System.Drawing.Point(405,82)
+$visualfx.location               = New-Object System.Drawing.Point(405,85)
 $visualfx.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $onedrive                        = New-Object system.Windows.Forms.Button
 $onedrive.text                   = "OneDrive"
 $onedrive.width                  = 150
 $onedrive.height                 = 30
-$onedrive.location               = New-Object System.Drawing.Point(251,119)
+$onedrive.location               = New-Object System.Drawing.Point(251,120)
 $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Panel3                          = New-Object system.Windows.Forms.Panel
@@ -237,7 +237,7 @@ $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
 $Label4.location                 = New-Object System.Drawing.Point(761,252)
-$Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
+$Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',18)
 
 $securitylow                     = New-Object system.Windows.Forms.Button
 $securitylow.text                = "Low"
@@ -426,7 +426,7 @@ $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode"
 $lightmode.width                 = 150
 $lightmode.height                = 30
-$lightmode.location              = New-Object System.Drawing.Point(405,45)
+$lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
