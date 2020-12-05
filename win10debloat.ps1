@@ -69,7 +69,7 @@ $7zip                            = New-Object system.Windows.Forms.Button
 $7zip.text                       = "7-Zip"
 $7zip.width                      = 150
 $7zip.height                     = 30
-$7zip.location                   = New-Object System.Drawing.Point(560,104)
+$7zip.location                   = New-Object System.Drawing.Point(870,104)
 $7zip.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $irfanview                       = New-Object system.Windows.Forms.Button
