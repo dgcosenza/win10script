@@ -27,22 +27,22 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 $Form                            = New-Object system.Windows.Forms.Form
-$Form.ClientSize                 = New-Object System.Drawing.Point(1350,700)
+$Form.ClientSize                 = New-Object System.Drawing.Point(1500,700)
 $Form.text                       = "FNX Labs Windows Toolbox"
 $Form.TopMost                    = $false
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
-$Panel1.height                   = 156
-$Panel1.width                    = 1194
-$Panel1.location                 = New-Object System.Drawing.Point(9,90)
+$Panel1.height                   = 210
+$Panel1.width                    = 1344
+$Panel1.location                 = New-Object System.Drawing.Point(9,50)
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "Software Installation"
 $Label1.AutoSize                 = $true
 $Label1.width                    = 25
 $Label1.height                   = 10
-$Label1.location                 = New-Object System.Drawing.Point(25,15)
-$Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',28)
+$Label1.location                 = New-Object System.Drawing.Point(28,5)
+$Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',22)
 
 $installchoco                    = New-Object system.Windows.Forms.Button
 $installchoco.text               = "Install Chocolatey"
@@ -55,21 +55,21 @@ $brave                           = New-Object system.Windows.Forms.Button
 $brave.text                      = "Brave Browser"
 $brave.width                     = 150
 $brave.height                    = 30
-$brave.location                  = New-Object System.Drawing.Point(251,124)
+$brave.location                  = New-Object System.Drawing.Point(251,105)
 $brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $msedge                           = New-Object system.Windows.Forms.Button
 $msedge.text                      = "Microsoft Edge"
 $msedge.width                     = 150
 $msedge.height                    = 30
-$msedge.location                  = New-Object System.Drawing.Point(251,89)
+$msedge.location                  = New-Object System.Drawing.Point(251,70)
 $msedge.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $firefox                         = New-Object system.Windows.Forms.Button
 $firefox.text                    = "Mozilla Firefox"
 $firefox.width                   = 150
 $firefox.height                  = 30
-$firefox.location                = New-Object System.Drawing.Point(251,54)
+$firefox.location                = New-Object System.Drawing.Point(251,35)
 $firefox.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $githubdestkop                   = New-Object system.Windows.Forms.Button
@@ -90,7 +90,7 @@ $irfanview                       = New-Object system.Windows.Forms.Button
 $irfanview.text                  = "Irfanview"
 $irfanview.width                 = 150
 $irfanview.height                = 30
-$irfanview.location              = New-Object System.Drawing.Point(405,19)
+$irfanview.location              = New-Object System.Drawing.Point(1175,0)
 $irfanview.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $adobereader                     = New-Object system.Windows.Forms.Button
@@ -111,7 +111,7 @@ $imageconverter                  = New-Object system.Windows.Forms.Button
 $imageconverter.text             = "Image Converter"
 $imageconverter.width            = 150
 $imageconverter.height           = 30
-$imageconverter.location         = New-Object System.Drawing.Point(405,54)
+$imageconverter.location         = New-Object System.Drawing.Point(1175,35)
 $imageconverter.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $notepad                         = New-Object system.Windows.Forms.Button
@@ -132,7 +132,7 @@ $gchrome                         = New-Object system.Windows.Forms.Button
 $gchrome.text                    = "Google Chrome"
 $gchrome.width                   = 150
 $gchrome.height                  = 30
-$gchrome.location                = New-Object System.Drawing.Point(251,19)
+$gchrome.location                = New-Object System.Drawing.Point(251,0)
 $gchrome.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $mpc                             = New-Object system.Windows.Forms.Button
@@ -177,6 +177,34 @@ $winterminal.height              = 30
 $winterminal.location            = New-Object System.Drawing.Point(867,124)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$krita                        	 = New-Object system.Windows.Forms.Button
+$krita.text                  	 = "Krita"
+$krita.width                 	 = 150
+$krita.height              	     = 30
+$krita.location           		 = New-Object System.Drawing.Point(1175,70)
+$krita.Font                		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$gimp                        	 = New-Object system.Windows.Forms.Button
+$gimp.text                  	 = "Gimp"
+$gimp.width                 	 = 150
+$gimp.height              	     = 30
+$gimp.location           		 = New-Object System.Drawing.Point(1175,105)
+$gimp.Font                		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$inkscape                        = New-Object system.Windows.Forms.Button
+$inkscape.text                   = "Inkscape"
+$inkscape.width                  = 150
+$inkscape.height              	 = 30
+$inkscape.location           	 = New-Object System.Drawing.Point(1175,140)
+$inkscape.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$kdenlive                        = New-Object system.Windows.Forms.Button
+$kdenlive.text                   = "Kdenlive"
+$kdenlive.width                  = 150
+$kdenlive.height              	 = 30
+$kdenlive.location           	 = New-Object System.Drawing.Point(1175,175)
+$kdenlive.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $ccleaner                        = New-Object system.Windows.Forms.Button
 $ccleaner.text                   = "CCleaner"
 $ccleaner.width                  = 150
@@ -213,7 +241,7 @@ $vscode.location                 = New-Object System.Drawing.Point(713,124)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
-$Label2.text                     = "(Chocolatey Required for installs)"
+$Label2.text                     = "(Chocolatey Required for Installs)"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
@@ -493,7 +521,7 @@ $lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$msedge,$firefox,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$msedge,$firefox,$7zip,$githubdestkop,$irfanview,$adobereader,$sumatrapdf,$imageconverter,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$kdenlive,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -609,6 +637,30 @@ $winterminal.Add_Click({
 $ccleaner.Add_Click({ 
     Write-Host "Installing CCleaner"
     choco install ccleaner -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$krita.Add_Click({ 
+    Write-Host "Installing Krita"
+    choco install krita -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$gimp.Add_Click({ 
+    Write-Host "Installing Gimp"
+    choco install gimp -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$inkscape.Add_Click({ 
+    Write-Host "Installing Inkscape"
+    choco install inkscape -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$kdenlive.Add_Click({ 
+    Write-Host "Installing Kdenlive"
+    choco install kdenlive -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
