@@ -564,7 +564,7 @@ $Label16.location                = New-Object System.Drawing.Point(24,94)
 $Label16.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label17                         = New-Object system.Windows.Forms.Label
-$Label17.text                    = "* Delays Features Updates Up to 3 Years"
+$Label17.text                    = "- Delays Features Updates Up to 3 Years"
 $Label17.AutoSize                = $true
 $Label17.width                   = 25
 $Label17.height                  = 10
@@ -572,7 +572,7 @@ $Label17.location                = New-Object System.Drawing.Point(23,112)
 $Label17.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label18                         = New-Object system.Windows.Forms.Label
-$Label18.text                    = "* Delays Security Updates 4 Days"
+$Label18.text                    = "- Delays Security Updates 4 Days"
 $Label18.AutoSize                = $true
 $Label18.width                   = 25
 $Label18.height                  = 10
@@ -580,7 +580,7 @@ $Label18.location                = New-Object System.Drawing.Point(24,130)
 $Label18.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label19                         = New-Object system.Windows.Forms.Label
-$Label19.text                    = "* Sets Maximum Active Time"
+$Label19.text                    = "- Sets Maximum Active Time"
 $Label19.AutoSize                = $true
 $Label19.width                   = 25
 $Label19.height                  = 10
