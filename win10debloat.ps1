@@ -311,7 +311,7 @@ $kdenlive.location           	 = New-Object System.Drawing.Point(1329,105)
 $kdenlive.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $diskcleanup                     = New-Object system.Windows.Forms.Button
-$diskcleanup.text                = "Disk Clean Up"
+$diskcleanup.text                = "Disk Cleanup"
 $diskcleanup.width               = 150
 $diskcleanup.height              = 30
 $diskcleanup.location            = New-Object System.Drawing.Point(1021,0)
@@ -838,10 +838,10 @@ $ccleaner.Add_Click({
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
-$ccleaner.Add_Click({ 
-    Write-Host "Executing Disk Clean Up"
+$diskcleanup.Add_Click({ 
+#    Write-Host "Executing Disk Cleanup"
     c:\windows\SYSTEM32\cleanmgr.exe
-	$wshell.Popup("Operation Completed",0,"Done",0x0)
+#	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
 $krita.Add_Click({ 
