@@ -356,14 +356,14 @@ $Label2.Font                     = New-Object System.Drawing.Font('Microsoft San
 $Panel2                          = New-Object system.Windows.Forms.Panel
 $Panel2.height                   = 159
 $Panel2.width                    = 588
-$Panel2.location                 = New-Object System.Drawing.Point(9,293)
+$Panel2.location                 = New-Object System.Drawing.Point(9,360)
 
 $Label3                          = New-Object system.Windows.Forms.Label
 $Label3.text                     = "System Tweaks"
 $Label3.AutoSize                 = $true
 $Label3.width                    = 230
 $Label3.height                   = 25
-$Label3.location                 = New-Object System.Drawing.Point(323,264)
+$Label3.location                 = New-Object System.Drawing.Point(323,333)
 $Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',18)
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
@@ -425,14 +425,14 @@ $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft San
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
 $Panel3.width                    = 440
-$Panel3.location                 = New-Object System.Drawing.Point(601,293)
+$Panel3.location                 = New-Object System.Drawing.Point(571,360)
 
 $Label4                          = New-Object system.Windows.Forms.Label
 $Label4.text                     = "Security"
 $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
-$Label4.location                 = New-Object System.Drawing.Point(761,264)
+$Label4.location                 = New-Object System.Drawing.Point(750,333)
 $Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',18)
 
 $securitylow                     = New-Object system.Windows.Forms.Button
@@ -580,21 +580,21 @@ $Label19.height                  = 10
 $Label19.location                = New-Object System.Drawing.Point(24,148)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Label20                         = New-Object system.Windows.Forms.Label
-$Label20.text                    = "Instructions"
-$Label20.AutoSize                = $true
-$Label20.width                   = 169
-$Label20.height                  = 23
-$Label20.location                = New-Object System.Drawing.Point(581,463)
-$Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+#$Label20                         = New-Object system.Windows.Forms.Label
+#$Label20.text                    = "Instructions"
+#$Label20.AutoSize                = $true
+#$Label20.width                   = 169
+#$Label20.height                  = 23
+#$Label20.location                = New-Object System.Drawing.Point(581,463)
+#$Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
-$Label21                         = New-Object system.Windows.Forms.Label
-$Label21.text                    = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
-$Label21.AutoSize                = $true
-$Label21.width                   = 150
-$Label21.height                  = 10
-$Label21.location                = New-Object System.Drawing.Point(390,507)
-$Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+#$Label21                         = New-Object system.Windows.Forms.Label
+#$Label21.text                    = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
+#$Label21.AutoSize                = $true
+#$Label21.width                   = 150
+#$Label21.height                  = 10
+#$Label21.location                = New-Object System.Drawing.Point(390,507)
+#$Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label22                         = New-Object system.Windows.Forms.Label
 $Label22.text                    = "(E = Enable, D = Disable)"
@@ -604,19 +604,19 @@ $Label22.height                  = 10
 $Label22.location                = New-Object System.Drawing.Point(50,-3)
 $Label22.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Label23                         = New-Object system.Windows.Forms.Label
-$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
-$Label23.AutoSize                = $true
-$Label23.width                   = 150
-$Label23.height                  = 10
-$Label23.location                = New-Object System.Drawing.Point(390,529)
-$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+#$Label23                         = New-Object system.Windows.Forms.Label
+#$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
+#$Label23.AutoSize                = $true
+#$Label23.width                   = 150
+#$Label23.height                  = 10
+#$Label23.location                = New-Object System.Drawing.Point(390,529)
+#$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 412
 $PictureBox1.height              = 125
 $PictureBox1.location            = New-Object System.Drawing.Point(1100,580)
-$PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blob/master/images/fnx-toolbox.png?raw=true"
+$PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blob/master/images/FNX_Labs_LOGO_COLOR_Small.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode (E)"
