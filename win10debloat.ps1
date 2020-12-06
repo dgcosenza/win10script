@@ -580,21 +580,21 @@ $Label19.height                  = 10
 $Label19.location                = New-Object System.Drawing.Point(24,148)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-#$Label20                         = New-Object system.Windows.Forms.Label
-#$Label20.text                    = "Instructions"
-#$Label20.AutoSize                = $true
-#$Label20.width                   = 169
-#$Label20.height                  = 23
-#$Label20.location                = New-Object System.Drawing.Point(581,463)
-#$Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+$Label20                         = New-Object system.Windows.Forms.Label
+$Label20.text                    = "Disclaimer"
+$Label20.AutoSize                = $true
+$Label20.width                   = 169
+$Label20.height                  = 23
+$Label20.location                = New-Object System.Drawing.Point(345,523)
+$Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',16)
 
-#$Label21                         = New-Object system.Windows.Forms.Label
-#$Label21.text                    = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
-#$Label21.AutoSize                = $true
-#$Label21.width                   = 150
-#$Label21.height                  = 10
-#$Label21.location                = New-Object System.Drawing.Point(390,507)
-#$Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+$Label21                         = New-Object system.Windows.Forms.Label
+$Label21.text                    = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
+$Label21.AutoSize                = $true
+$Label21.width                   = 150
+$Label21.height                  = 10
+$Label21.location                = New-Object System.Drawing.Point(345,550)
+$Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label22                         = New-Object system.Windows.Forms.Label
 $Label22.text                    = "(E = Enable, D = Disable)"
@@ -604,13 +604,13 @@ $Label22.height                  = 10
 $Label22.location                = New-Object System.Drawing.Point(50,-3)
 $Label22.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-#$Label23                         = New-Object system.Windows.Forms.Label
-#$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
-#$Label23.AutoSize                = $true
-#$Label23.width                   = 150
-#$Label23.height                  = 10
-#$Label23.location                = New-Object System.Drawing.Point(390,529)
-#$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+$Label23                         = New-Object system.Windows.Forms.Label
+$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
+$Label23.AutoSize                = $true
+$Label23.width                   = 150
+$Label23.height                  = 10
+$Label23.location                = New-Object System.Drawing.Point(345,568)
+$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 412
