@@ -310,32 +310,39 @@ $kdenlive.height              	 = 30
 $kdenlive.location           	 = New-Object System.Drawing.Point(1329,105)
 $kdenlive.Font                	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$diskcleanup                     = New-Object system.Windows.Forms.Button
+$diskcleanup.text                = "Disk Clean Up"
+$diskcleanup.width               = 150
+$diskcleanup.height              = 30
+$diskcleanup.location            = New-Object System.Drawing.Point(1021,0)
+$diskcleanup.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $ccleaner                        = New-Object system.Windows.Forms.Button
 $ccleaner.text                   = "CCleaner"
 $ccleaner.width                  = 150
 $ccleaner.height                 = 30
-$ccleaner.location               = New-Object System.Drawing.Point(1021,0)
+$ccleaner.location               = New-Object System.Drawing.Point(1021,35)
 $ccleaner.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Speccy                          = New-Object system.Windows.Forms.Button
 $Speccy.text                     = "Speccy"
 $Speccy.width                    = 150
 $Speccy.height                   = 30
-$Speccy.location                 = New-Object System.Drawing.Point(1021,35)
+$Speccy.location                 = New-Object System.Drawing.Point(1021,70)
 $Speccy.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $recuva                          = New-Object system.Windows.Forms.Button
 $recuva.text                     = "Recuva"
 $recuva.width                    = 150
 $recuva.height                   = 30
-$recuva.location                 = New-Object System.Drawing.Point(1021,70)
+$recuva.location                 = New-Object System.Drawing.Point(1021,105)
 $recuva.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $defraggler                      = New-Object system.Windows.Forms.Button
 $defraggler.text                 = "Defraggler"
 $defraggler.width                = 150
 $defraggler.height               = 30
-$defraggler.location             = New-Object System.Drawing.Point(1021,105)
+$defraggler.location             = New-Object System.Drawing.Point(1021,140)
 $defraggler.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
@@ -626,7 +633,7 @@ $lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$speccy,$recuva,$defraggler,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -828,6 +835,12 @@ $winterminal.Add_Click({
 $ccleaner.Add_Click({ 
     Write-Host "Installing CCleaner"
     choco install ccleaner -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$ccleaner.Add_Click({ 
+    Write-Host "Executing Disk Clean Up"
+    c:\windows\SYSTEM32\cleanmgr.exe
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
