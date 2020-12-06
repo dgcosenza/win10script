@@ -32,7 +32,7 @@ $Form.text                       = "FNX Labs Windows Toolbox"
 $Form.TopMost                    = $false
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
-$Panel1.height                   = 210
+$Panel1.height                   = 289
 $Panel1.width                    = 1478
 $Panel1.location                 = New-Object System.Drawing.Point(9,50)
 
@@ -265,15 +265,29 @@ $powertoys                       = New-Object system.Windows.Forms.Button
 $powertoys.text                  = "PowerToys"
 $powertoys.width                 = 150
 $powertoys.height                = 30
-$powertoys.location              = New-Object System.Drawing.Point(1329,140)
+$powertoys.location              = New-Object System.Drawing.Point(1329,210)
 $powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
 $winterminal.width               = 150
 $winterminal.height              = 30
-$winterminal.location            = New-Object System.Drawing.Point(1329,175)
+$winterminal.location            = New-Object System.Drawing.Point(1329,245)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$teamviewer                      = New-Object system.Windows.Forms.Button
+$teamviewer.text                 = "TeamViewer"
+$teamviewer.width                = 150
+$teamviewer.height               = 30
+$teamviewer.location             = New-Object System.Drawing.Point(1329,175)
+$teamviewer.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$qbittorrent                     = New-Object system.Windows.Forms.Button
+$qbittorrent.text                = "qBittorrent"
+$qbittorrent.width               = 150
+$qbittorrent.height              = 30
+$qbittorrent.location            = New-Object System.Drawing.Point(1329,140)
+$qbittorrent.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $krita                        	 = New-Object system.Windows.Forms.Button
 $krita.text                  	 = "Krita"
@@ -633,7 +647,7 @@ $lightmode.location              = New-Object System.Drawing.Point(405,50)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -679,6 +693,24 @@ $subtitulos1.Add_Click({
 $firefox.Add_Click({ 
     Write-Host "Installing Mozilla Firefox"
     choco install firefox -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$gchrome.Add_Click({ 
+    Write-Host "Installing Google Chrome"
+    choco install googlechrome -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$teamviewer.Add_Click({ 
+    Write-Host "Installing TeamViewer"
+    choco install teamviewer -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$qbittorrent.Add_Click({ 
+    Write-Host "Installing qBittorrent"
+    choco install qbittorrent -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
