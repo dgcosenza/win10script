@@ -98,6 +98,13 @@ $dosbox.height                   = 30
 $dosbox.location                 = New-Object System.Drawing.Point(251,24)
 $dosbox.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$scummvm                         = New-Object system.Windows.Forms.Button
+$scummvm.text                    = "ScummVM"
+$scummvm.width                   = 150
+$scummvm.height                  = 30
+$scummvm.location                = New-Object System.Drawing.Point(251,59)
+$scummvm.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $opera                           = New-Object system.Windows.Forms.Button
 $opera.text                      = "Opera Browser"
 $opera.width                     = 150
@@ -495,7 +502,7 @@ $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zo
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label1,$Label2,$Label3,$Label4,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$PictureBox1))
 $Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$atom,$brackets))
-$Panel2.controls.AddRange(@($Label11,$Label12,$dosbox,$powertoys,$winterminal))
+$Panel2.controls.AddRange(@($Label11,$Label12,$dosbox,$scummvm,$powertoys,$winterminal))
 
 $installchoco.Add_Click({ 
     Write-Host "Installing Chocolatey"
@@ -568,6 +575,17 @@ $dosbox.Add_Click({
     Write-Host "Installing DOSBox"
     choco install dosbox -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$scummvm.Add_Click({ 
+    $answer = $wshell.Popup("ScummVM is not in the Chocolatey Repositories, Do You Want to Download and Install ScummVM from the Official Website?",0,"Alert",64+4)
+    if($answer -eq 6) {
+        Invoke-WebRequest -Uri "https://downloads.scummvm.org/frs/scummvm/2.2.0/scummvm-2.2.0-win32.exe" -OutFile $env:USERPROFILE\Downloads\scummvm-2.2.0-win32.exe
+        ~/Downloads/scummvm-2.2.0-win32.exe
+     }else {
+        $answer.Quit()
+     }
+
 })
 
 $handbrake.Add_Click({ 
