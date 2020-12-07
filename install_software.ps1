@@ -537,8 +537,14 @@ $imageconverter.Add_Click({
 })
 
 $subtitulos1.Add_Click({ 
+    $answer = $wshell.Popup("Subtitulos 1.0 is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install Subtitulos 1.0 from FNX Labs Git-Hub Hosting?",0,"Alert!",64+4)
+    if($answer -eq 6) {
+        $wshell.Popup("When You Click the OK Button Subtitulos 1.0 Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
     Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/blob/master/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
 	~/Downloads/Subtitulos_1.0.exe
+     }else {
+        $answer.Quit()
+     }
 })
 
 $firefox.Add_Click({ 
@@ -578,8 +584,9 @@ $dosbox.Add_Click({
 })
 
 $scummvm.Add_Click({ 
-    $answer = $wshell.Popup("ScummVM is not in the Chocolatey Repositories, Do You Want to Download and Install ScummVM from the Official Website?",0,"Alert",64+4)
+    $answer = $wshell.Popup("ScummVM is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install ScummVM from the Official Website?",0,"Alert!",64+4)
     if($answer -eq 6) {
+        $wshell.Popup("When You Click the OK Button ScummVM Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
         Invoke-WebRequest -Uri "https://downloads.scummvm.org/frs/scummvm/2.2.0/scummvm-2.2.0-win32.exe" -OutFile $env:USERPROFILE\Downloads\scummvm-2.2.0-win32.exe
         ~/Downloads/scummvm-2.2.0-win32.exe
      }else {
