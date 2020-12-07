@@ -532,7 +532,7 @@ $brave.Add_Click({
 })
 
 $imageconverter.Add_Click({ 
-    Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/blob/master/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
+    Invoke-WebRequest -Uri "https://www.fnxlabs.net.ar/tools/git-hub/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
 	~/Downloads/Image_Converter.exe
 })
 
@@ -540,7 +540,7 @@ $subtitulos1.Add_Click({
     $answer = $wshell.Popup("Subtitulos 1.0 is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install Subtitulos 1.0 from FNX Labs Git-Hub Hosting?",0,"Alert!",64+4)
     if($answer -eq 6) {
         $wshell.Popup("When You Click the OK Button Subtitulos 1.0 Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
-    Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/blob/master/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
+    Invoke-WebRequest -Uri "https://www.fnxlabs.net.ar/tools/git-hub/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
 	~/Downloads/Subtitulos_1.0.exe
      }else {
         $answer.Quit()
