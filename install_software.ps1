@@ -224,12 +224,12 @@ $imageconverter.height           = 30
 $imageconverter.location         = New-Object System.Drawing.Point(1329,35)
 $imageconverter.Font             = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$handbrake                 		 = New-Object system.Windows.Forms.Button
-$handbrake.text           		 = "Handbrake"
-$handbrake.width         		 = 150
-$handbrake.height       	     = 30
-$handbrake.location      		 = New-Object System.Drawing.Point(1329,70)
-$handbrake.Font          		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+$handbrake                       = New-Object system.Windows.Forms.Button
+$handbrake.text                  = "Handbrake"
+$handbrake.width                 = 150
+$handbrake.height                = 30
+$handbrake.location              = New-Object System.Drawing.Point(1329,70)
+$handbrake.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $atom                       	 = New-Object system.Windows.Forms.Button
 $atom.text                   	 = "Atom"
