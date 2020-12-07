@@ -329,19 +329,19 @@ $qbittorrent.height              = 30
 $qbittorrent.location            = New-Object System.Drawing.Point(1329,140)
 $qbittorrent.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$krita                        	 = New-Object system.Windows.Forms.Button
-$krita.text                  	 = "Krita"
-$krita.width                 	 = 150
-$krita.height              	     = 30
-$krita.location           		 = New-Object System.Drawing.Point(559,70)
-$krita.Font                		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+$krita                           = New-Object system.Windows.Forms.Button
+$krita.text                      = "Krita"
+$krita.width                     = 150
+$krita.height                    = 30
+$krita.location                  = New-Object System.Drawing.Point(559,70)
+$krita.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$gimp                        	 = New-Object system.Windows.Forms.Button
-$gimp.text                  	 = "Gimp"
-$gimp.width                 	 = 150
-$gimp.height              	     = 30
-$gimp.location           		 = New-Object System.Drawing.Point(559,105)
-$gimp.Font                		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+$gimp                            = New-Object system.Windows.Forms.Button
+$gimp.text                       = "Gimp"
+$gimp.width                      = 150
+$gimp.height                     = 30
+$gimp.location                   = New-Object System.Drawing.Point(559,105)
+$gimp.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $inkscape                        = New-Object system.Windows.Forms.Button
 $inkscape.text                   = "Inkscape"
