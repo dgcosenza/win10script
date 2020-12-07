@@ -585,7 +585,6 @@ $scummvm.Add_Click({
      }else {
         $answer.Quit()
      }
-
 })
 
 $handbrake.Add_Click({ 
