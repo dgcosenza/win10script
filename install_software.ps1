@@ -33,7 +33,7 @@ $Form.TopMost                    = $false
 $Panel1                          = New-Object system.Windows.Forms.Panel
 $Panel1.height                   = 289
 $Panel1.width                    = 1478
-$Panel1.location                 = New-Object System.Drawing.Point(9,50)
+$Panel1.location                 = New-Object System.Drawing.Point(9,60)
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "Software Installation"
@@ -77,6 +77,13 @@ $vivaldi.width                   = 150
 $vivaldi.height                  = 30
 $vivaldi.location                = New-Object System.Drawing.Point(251,175)
 $vivaldi.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
+$dosbox                          = New-Object system.Windows.Forms.Button
+$dosbox.text                     = "DOSBox"
+$dosbox.width                    = 150
+$dosbox.height                   = 30
+$dosbox.location                 = New-Object System.Drawing.Point(251,245)
+$dosbox.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $opera                           = New-Object system.Windows.Forms.Button
 $opera.text                      = "Opera Browser"
@@ -204,18 +211,25 @@ $handbrake.height       	     = 30
 $handbrake.location      		 = New-Object System.Drawing.Point(1329,70)
 $handbrake.Font          		 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$atom                       	 = New-Object system.Windows.Forms.Button
+$atom.text                   	 = "Atom"
+$atom.width                  	 = 150
+$atom.height                	 = 30
+$atom.location              	 = New-Object System.Drawing.Point(1175,35)
+$atom.Font                  	 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
 $notepad.width                   = 150
 $notepad.height                  = 30
-$notepad.location                = New-Object System.Drawing.Point(1175,35)
+$notepad.location                = New-Object System.Drawing.Point(1175,70)
 $notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $sublimetext                     = New-Object system.Windows.Forms.Button
 $sublimetext.text                = "Sublime Text"
 $sublimetext.width               = 150
 $sublimetext.height              = 30
-$sublimetext.location            = New-Object System.Drawing.Point(1175,70)
+$sublimetext.location            = New-Object System.Drawing.Point(1175,105)
 $sublimetext.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
@@ -369,7 +383,7 @@ $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "Visual Studio Code"
 $vscode.width                    = 150
 $vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(1175,105)
+$vscode.location                 = New-Object System.Drawing.Point(1175,140)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -380,6 +394,38 @@ $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(25,-1)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$Label3                          = New-Object system.Windows.Forms.Label
+$Label3.text                     = "Browsers"
+$Label3.AutoSize                 = $true
+$Label3.width                    = 25
+$Label3.height                   = 10
+$Label3.location                 = New-Object System.Drawing.Point(304,42)
+$Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label4                          = New-Object system.Windows.Forms.Label
+$Label4.text                     = "Productivity"
+$Label4.AutoSize                 = $true
+$Label4.width                    = 25
+$Label4.height                   = 10
+$Label4.location                 = New-Object System.Drawing.Point(450,42)
+$Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label5                          = New-Object system.Windows.Forms.Label
+$Label5.text                     = "Photo | Design"
+$Label5.AutoSize                 = $true
+$Label5.width                    = 25
+$Label5.height                   = 10
+$Label5.location                 = New-Object System.Drawing.Point(596,42)
+$Label5.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label6                          = New-Object system.Windows.Forms.Label
+$Label6.text                     = "Audio | Music"
+$Label6.AutoSize                 = $true
+$Label6.width                    = 25
+$Label6.height                   = 10
+$Label6.location                 = New-Object System.Drawing.Point(749,42)
+$Label6.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
 $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 412
 $PictureBox1.height              = 125
@@ -387,8 +433,8 @@ $PictureBox1.location            = New-Object System.Drawing.Point(1100,580)
 $PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blob/master/images/FNX_Labs_LOGO_COLOR_Small.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 
-$Form.controls.AddRange(@($Panel1,$Label1,$Label2,$PictureBox1))
-$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode))
+$Form.controls.AddRange(@($Panel1,$Label1,$Label2,$Label3,$Label4,$Label5,$Label6,$PictureBox1))
+$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$dosbox,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$atom))
 
 $installchoco.Add_Click({ 
     Write-Host "Installing Chocolatey"
@@ -454,6 +500,12 @@ $qbittorrent.Add_Click({
 $vivaldi.Add_Click({ 
     Write-Host "Installing Vivaldi Browser"
     choco install vivaldi -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$dosbox.Add_Click({ 
+    Write-Host "Installing DOSBox"
+    choco install dosbox -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
@@ -550,6 +602,12 @@ $libreoffice.Add_Click({
 $notepad.Add_Click({ 
     Write-Host "Installing Notepad++"
     choco install notepadplusplus -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$atom.Add_Click({ 
+    Write-Host "Installing Atom"
+    choco install atom -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
