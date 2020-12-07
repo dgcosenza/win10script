@@ -532,16 +532,22 @@ $brave.Add_Click({
 })
 
 $imageconverter.Add_Click({ 
-    Invoke-WebRequest -Uri "https://www.fnxlabs.net.ar/tools/git-hub/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
-	~/Downloads/Image_Converter.exe
+    $answer = $wshell.Popup("RentASoft Image Converter is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install RentASoft Image Converter from FNX Labs Git-Hub Hosting?`n`nFile Size: 1.28MB",0,"Alert!",64+4)
+    if($answer -eq 6) {
+        $wshell.Popup("When You Click the OK Button RentASoft Image Converter Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
+        Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/raw/master/tools/Image_Converter.exe" -OutFile $env:USERPROFILE\Downloads\Image_Converter.exe
+        ~/Downloads/Image_Converter.exe
+     }else {
+        $answer.Quit()
+     }
 })
 
 $subtitulos1.Add_Click({ 
-    $answer = $wshell.Popup("Subtitulos 1.0 is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install Subtitulos 1.0 from FNX Labs Git-Hub Hosting?",0,"Alert!",64+4)
+    $answer = $wshell.Popup("Subtitulos 1.0 is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install Subtitulos 1.0 from FNX Labs Git-Hub Hosting?`n`nFile Size: 4.76MB",0,"Alert!",64+4)
     if($answer -eq 6) {
         $wshell.Popup("When You Click the OK Button Subtitulos 1.0 Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
-    Invoke-WebRequest -Uri "https://www.fnxlabs.net.ar/tools/git-hub/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
-	~/Downloads/Subtitulos_1.0.exe
+        Invoke-WebRequest -Uri "https://github.com/dgcosenza/win10script/raw/master/tools/Subtitulos_1.0.exe" -OutFile $env:USERPROFILE\Downloads\Subtitulos_1.0.exe
+	    ~/Downloads/Subtitulos_1.0.exe
      }else {
         $answer.Quit()
      }
@@ -584,9 +590,9 @@ $dosbox.Add_Click({
 })
 
 $scummvm.Add_Click({ 
-    $answer = $wshell.Popup("ScummVM is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install ScummVM from the Official Website?",0,"Alert!",64+4)
+    $answer = $wshell.Popup("ScummVM v2.2.0 is not in the Chocolatey Repositories.`n`nDo You Want to Download and Install ScummVM v2.2.0 from the Official Website?`n`nFile Size: 77MB",0,"Alert!",64+4)
     if($answer -eq 6) {
-        $wshell.Popup("When You Click the OK Button ScummVM Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
+        $wshell.Popup("When You Click the OK Button ScummVM v2.2.0 Will Start Downloading in the Background.`n`nWait Until the Installer Starts.`n`nThe Software May Appear to be Unresponsive.",0,"Alert!",64+0)
         Invoke-WebRequest -Uri "https://downloads.scummvm.org/frs/scummvm/2.2.0/scummvm-2.2.0-win32.exe" -OutFile $env:USERPROFILE\Downloads\scummvm-2.2.0-win32.exe
         ~/Downloads/scummvm-2.2.0-win32.exe
      }else {
