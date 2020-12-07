@@ -31,9 +31,14 @@ $Form.text                       = "FNX Labs - Software Installer"
 $Form.TopMost                    = $false
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
-$Panel1.height                   = 289
+$Panel1.height                   = 205
 $Panel1.width                    = 1478
 $Panel1.location                 = New-Object System.Drawing.Point(9,60)
+
+$Panel2                          = New-Object system.Windows.Forms.Panel
+$Panel2.height                   = 205
+$Panel2.width                    = 1478
+$Panel2.location                 = New-Object System.Drawing.Point(9,267)
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "Software Installation"
@@ -42,6 +47,14 @@ $Label1.width                    = 25
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(28,5)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',22)
+
+$Label2                          = New-Object system.Windows.Forms.Label
+$Label2.text                     = "(Chocolatey Required for Installs)"
+$Label2.AutoSize                 = $true
+$Label2.width                    = 25
+$Label2.height                   = 10
+$Label2.location                 = New-Object System.Drawing.Point(25,-1)
+$Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $installchoco                    = New-Object system.Windows.Forms.Button
 $installchoco.text               = "Install Chocolatey"
@@ -386,14 +399,6 @@ $vscode.height                   = 30
 $vscode.location                 = New-Object System.Drawing.Point(1175,140)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Label2                          = New-Object system.Windows.Forms.Label
-$Label2.text                     = "(Chocolatey Required for Installs)"
-$Label2.AutoSize                 = $true
-$Label2.width                    = 25
-$Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(25,-1)
-$Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
 $Label3                          = New-Object system.Windows.Forms.Label
 $Label3.text                     = "Browsers"
 $Label3.AutoSize                 = $true
@@ -415,7 +420,7 @@ $Label5.text                     = "Photo | Design"
 $Label5.AutoSize                 = $true
 $Label5.width                    = 25
 $Label5.height                   = 10
-$Label5.location                 = New-Object System.Drawing.Point(596,42)
+$Label5.location                 = New-Object System.Drawing.Point(592,42)
 $Label5.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label6                          = New-Object system.Windows.Forms.Label
@@ -423,8 +428,40 @@ $Label6.text                     = "Audio | Music"
 $Label6.AutoSize                 = $true
 $Label6.width                    = 25
 $Label6.height                   = 10
-$Label6.location                 = New-Object System.Drawing.Point(749,42)
+$Label6.location                 = New-Object System.Drawing.Point(750,42)
 $Label6.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label7                          = New-Object system.Windows.Forms.Label
+$Label7.text                     = "Video | Movies"
+$Label7.AutoSize                 = $true
+$Label7.width                    = 25
+$Label7.height                   = 10
+$Label7.location                 = New-Object System.Drawing.Point(900,42)
+$Label7.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label8                          = New-Object system.Windows.Forms.Label
+$Label8.text                     = "Maintenance"
+$Label8.AutoSize                 = $true
+$Label8.width                    = 25
+$Label8.height                   = 10
+$Label8.location                 = New-Object System.Drawing.Point(1060,42)
+$Label8.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label9                          = New-Object system.Windows.Forms.Label
+$Label9.text                     = "Programming"
+$Label9.AutoSize                 = $true
+$Label9.width                    = 25
+$Label9.height                   = 10
+$Label9.location                 = New-Object System.Drawing.Point(1212,42)
+$Label9.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+
+$Label10                          = New-Object system.Windows.Forms.Label
+$Label10.text                     = "Miscelaneous"
+$Label10.AutoSize                 = $true
+$Label10.width                    = 25
+$Label10.height                   = 10
+$Label10.location                 = New-Object System.Drawing.Point(1365,42)
+$Label10.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 412
@@ -433,8 +470,9 @@ $PictureBox1.location            = New-Object System.Drawing.Point(1100,580)
 $PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blob/master/images/FNX_Labs_LOGO_COLOR_Small.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 
-$Form.controls.AddRange(@($Panel1,$Label1,$Label2,$Label3,$Label4,$Label5,$Label6,$PictureBox1))
-$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$dosbox,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$atom))
+$Form.controls.AddRange(@($Panel1,$Panel2,$Label1,$Label2,$Label3,$Label4,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$PictureBox1))
+$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$atom))
+$Panel2.controls.AddRange(@($dosbox,$powertoys,$winterminal))
 
 $installchoco.Add_Click({ 
     Write-Host "Installing Chocolatey"
