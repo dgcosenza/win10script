@@ -330,32 +330,39 @@ $diskcleanup.height              = 30
 $diskcleanup.location            = New-Object System.Drawing.Point(1021,0)
 $diskcleanup.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$bleachbit                       = New-Object system.Windows.Forms.Button
+$bleachbit.text                  = "BleachBit"
+$bleachbit.width                 = 150
+$bleachbit.height                = 30
+$bleachbit.location              = New-Object System.Drawing.Point(1021,35)
+$bleachbit.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $ccleaner                        = New-Object system.Windows.Forms.Button
 $ccleaner.text                   = "CCleaner"
 $ccleaner.width                  = 150
 $ccleaner.height                 = 30
-$ccleaner.location               = New-Object System.Drawing.Point(1021,35)
+$ccleaner.location               = New-Object System.Drawing.Point(1021,70)
 $ccleaner.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Speccy                          = New-Object system.Windows.Forms.Button
 $Speccy.text                     = "Speccy"
 $Speccy.width                    = 150
 $Speccy.height                   = 30
-$Speccy.location                 = New-Object System.Drawing.Point(1021,70)
+$Speccy.location                 = New-Object System.Drawing.Point(1021,105)
 $Speccy.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $recuva                          = New-Object system.Windows.Forms.Button
 $recuva.text                     = "Recuva"
 $recuva.width                    = 150
 $recuva.height                   = 30
-$recuva.location                 = New-Object System.Drawing.Point(1021,105)
+$recuva.location                 = New-Object System.Drawing.Point(1021,140)
 $recuva.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $defraggler                      = New-Object system.Windows.Forms.Button
 $defraggler.text                 = "Defraggler"
 $defraggler.width                = 150
 $defraggler.height               = 30
-$defraggler.location             = New-Object System.Drawing.Point(1021,140)
+$defraggler.location             = New-Object System.Drawing.Point(1021,175)
 $defraggler.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $vscode                          = New-Object system.Windows.Forms.Button
@@ -381,7 +388,7 @@ $PictureBox1.imageLocation       = "https://github.com/dgcosenza/win10script/blo
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Label2,$PictureBox1))
-$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$diskcleanup,$speccy,$recuva,$defraggler,$vscode))
+$Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$powertoys,$winterminal,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode))
 
 $installchoco.Add_Click({ 
     Write-Host "Installing Chocolatey"
@@ -597,6 +604,12 @@ $winterminal.Add_Click({
 $ccleaner.Add_Click({ 
     Write-Host "Installing CCleaner"
     choco install ccleaner -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$bleachbit.Add_Click({ 
+    Write-Host "Installing BleachBit"
+    choco install bleachbit -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
