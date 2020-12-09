@@ -105,6 +105,13 @@ $scummvm.height                  = 30
 $scummvm.location                = New-Object System.Drawing.Point(251,59)
 $scummvm.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
+$retroarch                       = New-Object system.Windows.Forms.Button
+$retroarch.text                  = "RetroArch"
+$retroarch.width                 = 150
+$retroarch.height                = 30
+$retroarch.location              = New-Object System.Drawing.Point(251,94)
+$retroarch.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
+
 $opera                           = New-Object system.Windows.Forms.Button
 $opera.text                      = "Opera Browser"
 $opera.width                     = 150
@@ -502,7 +509,7 @@ $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zo
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label1,$Label2,$Label3,$Label4,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$PictureBox1))
 $Panel1.controls.AddRange(@($Label2,$installchoco,$uninstallchoco,$upgradechoco,$brave,$vivaldi,$opera,$msedge,$firefox,$subtitulos1,$7zip,$githubdestkop,$irfanview,$xnviewmp,$aimp,$musikcube,$spotify,$audacity,$musicbee,$winamp,$adobereader,$sumatrapdf,$libreoffice,$imageconverter,$handbrake,$smplayer,$notepad,$sublimetext,$gchrome,$mpc,$vlc,$popcorntime,$teamviewer,$qbittorrent,$krita,$gimp,$inkscape,$blender,$kdenlive,$ccleaner,$bleachbit,$diskcleanup,$speccy,$recuva,$defraggler,$vscode,$atom,$brackets))
-$Panel2.controls.AddRange(@($Label11,$Label12,$dosbox,$scummvm,$powertoys,$winterminal))
+$Panel2.controls.AddRange(@($Label11,$Label12,$dosbox,$scummvm,$retroarch,$powertoys,$winterminal))
 
 $installchoco.Add_Click({ 
     Write-Host "Installing Chocolatey"
@@ -598,6 +605,12 @@ $scummvm.Add_Click({
      }else {
         $answer.Quit()
      }
+})
+
+$retroarch.Add_Click({ 
+    Write-Host "Installing RetroArch"
+    choco install retroarch -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
 $handbrake.Add_Click({ 
